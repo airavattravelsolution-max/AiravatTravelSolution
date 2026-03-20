@@ -1,25 +1,105 @@
-<!-- Navigation Bar -->
-<nav class="navbar">
-    <div class="nav-container">
+/* ============================================
+   NAVBAR - CLEAN + WORKING
+   ============================================ */
 
-        <a href="{{ '/' | relative_url }}" class="logo-link">
-            <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Airavat Logo" class="logo-img">
-            <span class="logo-text">AIRAVAT</span>
-        </a>
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e8e4db;
+    z-index: 1000;
+}
 
-        <button class="hamburger" id="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    height: 70px;
 
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="{{ '/' | relative_url }}" class="nav-link">Home</a></li>
-            <li><a href="{{ '/about.html' | relative_url }}" class="nav-link">About</a></li>
-            <li><a href="{{ '/services.html' | relative_url }}" class="nav-link">Services</a></li>
-            <li><a href="{{ '/fleet.html' | relative_url }}" class="nav-link">Fleet</a></li>
-            <li><a href="{{ '/contact.html' | relative_url }}" class="nav-link">Contact</a></li>
-        </ul>
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    </div>
-</nav>
+/* LOGO */
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #111;
+}
+
+/* MENU */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #bfa46f;
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: #111;
+    margin: 4px 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 12px;
+    }
+}
