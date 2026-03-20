@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  {% include seo.html %}
-  <link rel="stylesheet" href="/assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airavar Travel Solution</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-{% include header.html %}
-<main>{{ content }}</main>
-{% include footer.html %}
-<script src="/assets/js/script.js"></script>
+    <header>
+        <h1>Welcome to Your Site</h1>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} Your Site Name</p>
+    </footer>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
