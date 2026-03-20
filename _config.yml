@@ -1,7 +1,7 @@
 title: Airavat Travel Solutions
 description: Premium chauffeur-driven car and bus rental services across India
 baseurl: ""
-url: "https://airavattravelsolution-max.github.io/AiravatTravelSolution/"
+url: "https://airavattravelsolution-max.github.io/"
 
 plugins:
   - jekyll-seo-tag
