@@ -1,38 +1,60 @@
-// script.js
+// Smooth Scrolling Navigation
+const smoothScroll = (target, duration) => {
+    const targetElement = document.querySelector(target);
+    const targetPosition = targetElement.getBoundingClientRect().top;
+    const startPosition = window.scrollY;
+    const startTime = performance.now();
 
-// Smooth scrolling navigation
-const smoothScroll = (target) => {
-    document.querySelector(target).scrollIntoView({
-        behavior: 'smooth'
+    const easeInOutCubic = (t) => {
+        return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+    };
+
+    const animation = currentTime => {
+        const timeElapsed = currentTime - startTime;
+        const run = easeInOutCubic(timeElapsed / duration);
+        window.scrollTo(0, startPosition + run * targetPosition);
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+        }
+    };
+
+    requestAnimationFrame(animation);
+};
+
+// Mobile Menu Hamburger Toggle
+const toggleHamburger = () => {
+    const menu = document.querySelector('.menu');
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        hamburger.classList.toggle('active');
     });
 };
 
-// Event listeners for smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        smoothScroll(this.getAttribute('href'));
-    });
-});
+toggleHamburger();
 
-// Mobile menu toggle functionality
-const menuToggle = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('.nav-menu');
-
-if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-}
-
-// Interactive button effects
-const buttons = document.querySelectorAll('.interactive-button');
-
+// Interactive Button Hover Effects
+const buttons = document.querySelectorAll('.btn');
 buttons.forEach(button => {
-    button.addEventListener('mouseenter', () => {
-        button.classList.add('hover');
+    button.addEventListener('mouseover', () => {
+        button.classList.add('hover-effect');
     });
-    button.addEventListener('mouseleave', () => {
-        button.classList.remove('hover');
+    button.addEventListener('mouseout', () => {
+        button.classList.remove('hover-effect');
     });
 });
+
+// Smooth Animations
+const animatedElements = document.querySelectorAll('.animate');
+const showOnScroll = () => {
+    animatedElements.forEach(el => {
+        const elementBottom = el.getBoundingClientRect().bottom;
+        const isVisible = elementBottom < window.innerHeight;
+        if (isVisible) {
+            el.classList.add('fade-in');
+        }
+    });
+};
+
+window.addEventListener('scroll', showOnScroll);
+showOnScroll();
