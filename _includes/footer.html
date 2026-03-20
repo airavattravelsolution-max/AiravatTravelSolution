@@ -1,37 +1,24 @@
-<!-- ============================================
-     AIRAVAT MINIMAL PREMIUM FOOTER
-     ============================================ -->
+<nav class="navbar">
+    <div class="nav-container">
 
-<footer class="footer">
+        <a href="{{ '/' | relative_url }}" class="logo-link">
+            <img src="{{ '/assets/images/logo.png' | relative_url }}" class="logo-img">
+            <span class="logo-text">AIRAVAT</span>
+        </a>
 
-    <div class="footer-content">
-        <div class="footer-section">
+        <button class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
-            <!-- Brand -->
-            <h4>Airavat Travel Solutions</h4>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="{{ '/' | relative_url }}" class="nav-link">Home</a></li>
+            <li><a href="{{ '/about.html' | relative_url }}" class="nav-link">About</a></li>
+            <li><a href="{{ '/services.html' | relative_url }}" class="nav-link">Services</a></li>
+            <li><a href="{{ '/fleet.html' | relative_url }}" class="nav-link">Fleet</a></li>
+            <li><a href="{{ '/contact.html' | relative_url }}" class="nav-link">Contact</a></li>
+        </ul>
 
-            <!-- Social Links -->
-            <div class="social-footer">
-                <a href="https://www.instagram.com/airavat_travel_solutions?igsh=cnR3NDFrZWY1ajd4" target="_blank" class="social-footer-link">
-                    Instagram
-                </a>
-
-                <a href="https://www.facebook.com/share/1BVwVW5SZ7/" target="_blank" class="social-footer-link">
-                    Facebook
-                </a>
-
-                <a href="https://wa.me/919167101212" target="_blank" class="social-footer-link">
-                    WhatsApp
-                </a>
-            </div>
-
-        </div>
     </div>
-
-    <!-- Bottom Strip -->
-    <div class="footer-bottom">
-        <p>&copy; 2026 Airavat Travel Solutions. All rights reserved.</p>
-        <p>Premium Chauffeur-Driven Travel Across 100+ Cities in India</p>
-    </div>
-
-</footer>
+</nav>
