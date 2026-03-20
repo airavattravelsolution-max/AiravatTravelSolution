@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airavar Travel Solution</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Your Site</h1>
-    </header>
-    <main>
-        {{ content }}
-    </main>
-    <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} Your Site Name</p>
-    </footer>
-    <script src="/assets/js/script.js"></script>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <ul>
+        {% for page in site.pages %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>&copy; {{ site.year }} {{ site.title }}. All rights reserved.</p>
+  </footer>
 </body>
 </html>
