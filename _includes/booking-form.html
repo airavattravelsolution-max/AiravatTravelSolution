@@ -1,5 +1,36 @@
-<form id="bookingForm">
-<input id="name" placeholder="Name">
-<input id="phone" placeholder="Phone">
-<button type="submit">Send</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Travel Booking Form</h1>
+    <form action="/submit-booking" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="travelDate">Travel Date:</label>
+        <input type="date" id="travelDate" name="travelDate" required>
+
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+
+        <label for="numTravelers">Number of Travelers:</label>
+        <input type="number" id="numTravelers" name="numTravelers" min="1" required>
+
+        <label for="preferences">Special Preferences:</label>
+        <textarea id="preferences" name="preferences"></textarea>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+</body>
+</html>
