@@ -1,0 +1,146 @@
+---
+layout: default
+title: Our Services - Airavat Travel Solutions
+---
+
+<main class="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive Transportation Solutions for Every Need</p>
+        </div>
+    </section>
+
+    <!-- Services Details -->
+    <section class="services-detail">
+        <div class="container">
+            <div class="service-block">
+                <h2>Airport Transfers</h2>
+                <p>Seamless and reliable airport transfer services with professional chauffeurs. We ensure on-time pickups and drop-offs with real-time tracking for your convenience.</p>
+                <ul>
+                    <li>Early morning and late-night availability</li>
+                    <li>Flight tracking and wait time included</li>
+                    <li>Premium vehicles for comfort</li>
+                    <li>Professional and courteous chauffeurs</li>
+                </ul>
+            </div>
+
+            <div class="service-block">
+                <h2>Local City Travel</h2>
+                <p>Comfortable and affordable local travel solutions for daily commutes, shopping, and city tours.</p>
+                <ul>
+                    <li>Hourly rental options available</li>
+                    <li>Experienced local drivers</li>
+                    <li>Clean and well-maintained vehicles</li>
+                    <li>Transparent and competitive pricing</li>
+                </ul>
+            </div>
+
+            <div class="service-block">
+                <h2>Outstation Trips</h2>
+                <p>Long-distance travel with ultimate comfort, safety, and professionalism. Perfect for weekend getaways, business trips, and family vacations.</p>
+                <ul>
+                    <li>Hourly and per-kilometer options</li>
+                    <li>Fuel and toll included in packages</li>
+                    <li>Experienced highway drivers</li>
+                    <li>Fully insured and GPS-enabled vehicles</li>
+                </ul>
+            </div>
+
+            <div class="service-block">
+                <h2>Monthly & Yearly Rentals</h2>
+                <p>Customized rental solutions for corporate and personal needs with significant cost savings.</p>
+                <ul>
+                    <li>Flexible rental periods</li>
+                    <li>Dedicated vehicles and drivers</li>
+                    <li>Maintenance and fuel included</li>
+                    <li>Flexible payment terms</li>
+                </ul>
+            </div>
+
+            <div class="service-block">
+                <h2>Employee Transportation</h2>
+                <p>Complete fleet management solutions for corporate employee transport with seamless coordination.</p>
+                <ul>
+                    <li>Fixed route planning and optimization</li>
+                    <li>Attendance tracking and reporting</li>
+                    <li>Customized schedules</li>
+                    <li>Dedicated account managers</li>
+                </ul>
+            </div>
+
+            <div class="service-block">
+                <h2>Event Transportation</h2>
+                <p>Professional transport solutions for corporate events, conferences, weddings, and group tours.</p>
+                <ul>
+                    <li>Coordinated multi-vehicle dispatch</li>
+                    <li>Guest pickup and drop coordination</li>
+                    <li>Large fleet availability</li>
+                    <li>Event-specific routing and timing</li>
+                </ul>
+            </div>
+
+            <div class="service-block">
+                <h2>Bus Rental Services</h2>
+                <p>We provide all types of buses from 14-seater to 45-seater, ideal for corporate and group needs.</p>
+                <ul>
+                    <li>Corporate employee transport</li>
+                    <li>Events & conferences</li>
+                    <li>Group tours & outings</li>
+                    <li>Premium amenities included</li>
+                </ul>
+            </div>
+
+            <div class="service-block">
+                <h2>Tour Packages</h2>
+                <p>Customized tour packages with comfortable transportation and professional guidance.</p>
+                <ul>
+                    <li>Flexible itineraries</li>
+                    <li>Experienced drivers and guides</li>
+                    <li>Comfortable accommodations</li>
+                    <li>Competitive pricing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Features -->
+    <section class="service-features">
+        <div class="container">
+            <h2>Why Our Services Stand Out</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <span class="feature-num">1</span>
+                    <h4>Professional Chauffeurs</h4>
+                    <p>KYC verified, background checked, trained in defensive driving and first aid</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-num">2</span>
+                    <h4>Well-Maintained Fleet</h4>
+                    <p>Regular servicing, sanitization, and quality checks for every vehicle</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-num">3</span>
+                    <h4>Real-Time Tracking</h4>
+                    <p>GPS-enabled vehicles with live tracking and transparent communication</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-num">4</span>
+                    <h4>Transparent Pricing</h4>
+                    <p>No hidden charges with detailed billing and customized packages</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-num">5</span>
+                    <h4>Safety Protocols</h4>
+                    <p>Fully insured vehicles, emergency support, and safety training</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-num">6</span>
+                    <h4>24/7 Support</h4>
+                    <p>Dedicated account managers and customer support available always</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,122 @@
+---
+layout: default
+title: Fleet - Airavat Travel Solutions
+---
+
+<main class="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Fleet</h1>
+            <p>Premium Vehicles for Every Travel Need</p>
+        </div>
+    </section>
+
+    <!-- Fleet Details -->
+    <section class="fleet-detail">
+        <div class="container">
+            <div class="fleet-category">
+                <h2>Luxury Sedans</h2>
+                <p>Perfect for individual and small group travel with premium comfort and style.</p>
+                <div class="fleet-specs">
+                    <p><strong>Models:</strong> Toyota Dzire, Etios, Xcent</p>
+                    <p><strong>Capacity:</strong> 1-4 Passengers</p>
+                    <p><strong>Features:</strong> Air conditioning, premium seating, music system, mobile charging</p>
+                    <p><strong>Best For:</strong> Airport transfers, business meetings, city tours</p>
+                </div>
+            </div>
+
+            <div class="fleet-category">
+                <h2>Premium SUVs</h2>
+                <p>Spacious and comfortable SUVs ideal for family travel and group outings.</p>
+                <div class="fleet-specs">
+                    <p><strong>Models:</strong> Toyota Innova, Crysta, Fortuner</p>
+                    <p><strong>Capacity:</strong> 4-7 Passengers</p>
+                    <p><strong>Features:</strong> Powerful engine, superior comfort, advanced safety, entertainment system</p>
+                    <p><strong>Best For:</strong> Family trips, corporate outings, group travel</p>
+                </div>
+            </div>
+
+            <div class="fleet-category">
+                <h2>Luxury Cars</h2>
+                <p>Top-tier luxury vehicles for executive travel and special occasions.</p>
+                <div class="fleet-specs">
+                    <p><strong>Models:</strong> Mercedes-Benz, BMW, Audi</p>
+                    <p><strong>Capacity:</strong> 1-4 Passengers</p>
+                    <p><strong>Features:</strong> Premium leather interiors, luxury amenities, advanced technology</p>
+                    <p><strong>Best For:</strong> Executive travel, luxury events, premium experiences</p>
+                </div>
+            </div>
+
+            <div class="fleet-category">
+                <h2>Tempo Travellers</h2>
+                <p>Versatile vehicles perfect for medium-sized group travel with comfort.</p>
+                <div class="fleet-specs">
+                    <p><strong>Options:</strong> 13, 17, 20, 26 Seater variants</p>
+                    <p><strong>Capacity:</strong> 13-26 Passengers</p>
+                    <p><strong>Features:</strong> Spacious interiors, good ventilation, comfortable seating, luggage space</p>
+                    <p><strong>Best For:</strong> Group tours, team outings, school/college trips</p>
+                </div>
+            </div>
+
+            <div class="fleet-category">
+                <h2>Mini Coaches</h2>
+                <p>Large capacity coaches for corporate and group transport needs.</p>
+                <div class="fleet-specs">
+                    <p><strong>Capacity:</strong> 30 Passengers</p>
+                    <p><strong>Features:</strong> Premium seating, air conditioning, entertainment system, luggage space</p>
+                    <p><strong>Best For:</strong> Corporate events, large group tours, employee transport</p>
+                </div>
+            </div>
+
+            <div class="fleet-category">
+                <h2>Large Buses</h2>
+                <p>Premium luxury coaches for large group travel with maximum comfort.</p>
+                <div class="fleet-specs">
+                    <p><strong>Capacity:</strong> 45 Passengers</p>
+                    <p><strong>Features:</strong> Luxury seating, climate control, entertainment, premium amenities</p>
+                    <p><strong>Best For:</strong> Large events, mass group tours, corporate gatherings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Features -->
+    <section class="fleet-features">
+        <div class="container">
+            <h2>Fleet Excellence</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">🔧</span>
+                    <h4>Regular Maintenance</h4>
+                    <p>All vehicles undergo regular servicing and quality checks</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🛡️</span>
+                    <h4>Fully Insured</h4>
+                    <p>Comprehensive insurance coverage for passenger safety</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🧹</span>
+                    <h4>Clean & Sanitized</h4>
+                    <p>Regular cleaning and sanitization after every trip</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">📡</span>
+                    <h4>GPS Enabled</h4>
+                    <p>Real-time tracking available on all vehicles</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⭐</span>
+                    <h4>Premium Amenities</h4>
+                    <p>Mineral water, tissues, newspapers, first aid kits available</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">👨‍✈️</span>
+                    <h4>Professional Drivers</h4>
+                    <p>Trained, verified, and courteous chauffeurs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

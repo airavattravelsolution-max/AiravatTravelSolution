@@ -1,0 +1,90 @@
+---
+layout: default
+title: About Us - Airavat Travel Solutions
+---
+
+<main class="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>India's Trusted Chauffeur-Driven Car & Bus Rental Company</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-intro">
+                <h2>Who We Are</h2>
+                <p>Airavat Travel Solutions is one of India's leading online car and coach rental providers, offering reliable, safe, and professional transportation services to corporates, MNCs, SMEs, and government organizations.</p>
+                <p>With a strong presence across 100+ cities, we serve thousands of employees every month with our well-maintained fleet and highly trained chauffeurs.</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Our Mission</h3>
+                    <p>To provide premium, reliable, and affordable transportation solutions that exceed customer expectations and set industry standards for safety and professionalism.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Our Vision</h3>
+                    <p>To become India's most trusted and preferred chauffeur-driven transportation provider, recognized for excellence, innovation, and customer satisfaction.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Our Values</h3>
+                    <p>Reliability, Safety, Professionalism, Transparency, Customer Focus, and Continuous Improvement guide all our operations and decisions.</p>
+                </div>
+            </div>
+
+            <div class="why-section">
+                <h2>Why Choose Airavat?</h2>
+                <div class="why-grid">
+                    <div class="why-item">
+                        <span class="icon">✓</span>
+                        <h4>Reliable & Professional Service</h4>
+                        <p>On-time service with trained, courteous chauffeurs and well-maintained vehicles</p>
+                    </div>
+                    <div class="why-item">
+                        <span class="icon">✓</span>
+                        <h4>Wide Vehicle Range</h4>
+                        <p>Sedans, SUVs, Luxury Cars, Tempo Travellers, Mini Coaches & Large Buses</p>
+                    </div>
+                    <div class="why-item">
+                        <span class="icon">✓</span>
+                        <h4>Pan India Coverage</h4>
+                        <p>Single-window transport solutions across 100+ cities</p>
+                    </div>
+                    <div class="why-item">
+                        <span class="icon">✓</span>
+                        <h4>24/7 Support</h4>
+                        <p>Dedicated support team and account managers available round the clock</p>
+                    </div>
+                    <div class="why-item">
+                        <span class="icon">✓</span>
+                        <h4>Advanced Technology</h4>
+                        <p>Real-time GPS tracking, live monitoring, and seamless billing</p>
+                    </div>
+                    <div class="why-item">
+                        <span class="icon">✓</span>
+                        <h4>Safety & Quality</h4>
+                        <p>Fully insured vehicles, KYC verified drivers, regular maintenance</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="strength-section">
+                <h2>Our Strength</h2>
+                <ul class="strength-list">
+                    <li>Experienced and dedicated management team</li>
+                    <li>Strong corporate governance and transparency</li>
+                    <li>Well-maintained and modern fleet of vehicles</li>
+                    <li>Highly trained and courteous chauffeurs</li>
+                    <li>Advanced tracking and monitoring systems</li>
+                    <li>Transparent billing and reporting solutions</li>
+                    <li>Customized solutions for corporate needs</li>
+                    <li>Pan-India presence with local expertise</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
