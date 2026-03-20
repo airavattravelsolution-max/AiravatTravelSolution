@@ -1,7 +1,8 @@
 <nav class="navbar">
     <div class="nav-container">
-        <a href="/AiravatTravelSolution/" class="logo-link">
-            <img src="/AiravatTravelSolution/assets/images/logo.png" alt="Airavat Logo" class="logo-img">
+
+        <a href="{{ '/' | relative_url }}" class="logo-link">
+            <img src="{{ '/assets/images/logo.png' | relative_url }}" class="logo-img">
             <span class="logo-text">AIRAVAT</span>
         </a>
 
@@ -12,11 +13,12 @@
         </button>
 
         <ul class="nav-menu" id="navMenu">
-            <li><a href="/AiravatTravelSolution/" class="nav-link">Home</a></li>
-            <li><a href="/AiravatTravelSolution/about.html" class="nav-link">About</a></li>
-            <li><a href="/AiravatTravelSolution/services.html" class="nav-link">Services</a></li>
-            <li><a href="/AiravatTravelSolution/fleet.html" class="nav-link">Fleet</a></li>
-            <li><a href="/AiravatTravelSolution/contact.html" class="nav-link">Contact</a></li>
+            <li><a href="{{ '/' | relative_url }}" class="nav-link">Home</a></li>
+            <li><a href="{{ '/about.html' | relative_url }}" class="nav-link">About</a></li>
+            <li><a href="{{ '/services.html' | relative_url }}" class="nav-link">Services</a></li>
+            <li><a href="{{ '/fleet.html' | relative_url }}" class="nav-link">Fleet</a></li>
+            <li><a href="{{ '/contact.html' | relative_url }}" class="nav-link">Contact</a></li>
         </ul>
+
     </div>
 </nav>
