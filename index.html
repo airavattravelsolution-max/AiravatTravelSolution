@@ -1,57 +1,90 @@
+---
+layout: default
+title: Home
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airavat Travel Solutions</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, charcoalsilver, gold);
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: burgundy;
+        }
+        header, footer {
+            background: burgundy;
+            color: white;
+            padding: 10px 20px;
+        }
+        .service-section {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .contact-info {
+            font-size: 1.2em;
+        }
+        .social-links a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: gold;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: burgundy;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="hero">
-            <h1>Welcome to Airavat Travel Solutions</h1>
-            <p>Experience luxury travel with our premium services.</p>
-            <a href="#services" class="btn">Explore Services</a>
-        </div>
-    </header>
-    <section id="services">
+
+<header>
+    <h1>Welcome to Airavat Travel Solutions</h1>
+</header>
+
+<main>
+    <section class="service-section">
         <h2>Our Services</h2>
-        <ul>
-            <li>Luxury Vehicle Rentals</li>
-            <li>Chauffeur Services</li>
-            <li>Corporate Travel</li>
-            <li>Event Transportation</li>
-        </ul>
-        <p>Enjoy top-notch services with a focus on comfort and convenience.</p>
+        <p>We offer a variety of travel services including...</p>
     </section>
-    <section id="fleet">
+
+    <section class="service-section">
         <h2>Our Fleet</h2>
-        <p>We offer a diverse range of vehicles to meet all your travel needs:</p>
-        <ul>
-            <li>Sedans</li>
-            <li>SUVs</li>
-            <li>Luxury Vans</li>
-            <li>Buses</li>
-        </ul>
+        <p>Explore our range of vehicles...</p>
     </section>
-    <section id="industries">
+
+    <section class="service-section">
         <h2>Industries We Serve</h2>
-        <p>Our clients come from various sectors, including:</p>
-        <ul>
-            <li>Tourism</li>
-            <li>Corporate</li>
-            <li>Events</li>
-            <li>Wedding Services</li>
-        </ul>
+        <p>We cater to various industries including...</p>
     </section>
-    <section id="contact">
+
+    <section class="contact-info">
         <h2>Contact Us</h2>
-        <p>Get in touch with us for more information:</p>
-        <p><strong>Email:</strong> contact@airavattravelsolutions.com</p>
-        <p><strong>Phone:</strong> +1 (800) 123-4567</p>
+        <p>Contact Person: <strong>Saurabh Shirdhankar</strong></p>
+        <p>Phone: <a href="tel:+919167101212">+91 9167101212</a> / <a href="tel:+917021312012">7021312012</a></p>
+        <p>Email: <a href="mailto:airavattravelsolution@gmail.com">airavattravelsolution@gmail.com</a></p>
     </section>
-    <footer>
-        <p>&copy; 2026 Airavat Travel Solutions. All rights reserved.</p>
-    </footer>
+
+    <section class="social-links">
+        <h2>Follow Us</h2>
+        <a href="https://www.instagram.com/airavat_travel_solutions?igsh=cnR3NDFrZWY1ajd4" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/share/1BVwVW5SZ7/" target="_blank">Facebook</a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Airavat Travel Solutions. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
