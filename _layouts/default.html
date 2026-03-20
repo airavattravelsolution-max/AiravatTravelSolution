@@ -6,12 +6,13 @@
     <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}Airavat Travel Solutions - India's Premium Chauffeur Services Across 100+ Cities{% endif %}">
     <meta name="keywords" content="car rental, bus rental, chauffeur services, corporate travel, India">
     <title>{% if page.title %}{{ page.title }}{% else %}Airavat Travel Solutions{% endif %}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
+    <script src="/AiravatTravelSolution/assets/js/main.js"></script>
+    <link rel="stylesheet" href="/AiravatTravelSolution/assets/css/style.css">
 <body>
     {% include navbar.html %}
     {{ content }}
     {% include footer.html %}
-    <script src="/AiravatTravelSolution/assets/js/main.js"></script>
+    
 </body>
 </html>
