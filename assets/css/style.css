@@ -1,0 +1,12 @@
+:root {
+--primary:#2c2a28;
+--accent:#b89b5e;
+--bg:#f4f1ea;
+--text:#2b2b2b;
+}
+body{background:var(--bg);font-family:Arial;}
+.navbar{background:white;padding:10px;}
+.nav-menu{display:flex;gap:10px;list-style:none;}
+.nav-link{text-decoration:none;color:var(--text);}
+.footer{text-align:center;padding:20px;background:#1e1c1a;color:#b89b5e;}
+.social-footer{display:flex;justify-content:center;gap:15px;}
