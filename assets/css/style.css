@@ -350,3 +350,15 @@ h2 {
     position: relative;
     z-index: 2;
 }
+.cta-fleet::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 140px;
+
+    background: url("../images/fleet-bg.svg") repeat-x;
+    background-size: contain;
+    opacity: 0.6;
+}
