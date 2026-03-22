@@ -19,7 +19,7 @@
     box-sizing: border-box;
 }
 
-/* BODY WITH TEXTURE */
+/* ✅ TEXTURED BACKGROUND ADDED */
 body {
     font-family: "Georgia", serif;
     background-color: var(--light);
@@ -123,6 +123,7 @@ body {
     position: relative;
 }
 
+/* ✅ SUBTLE HERO TEXTURE */
 .hero::after {
     content: "";
     position: absolute;
@@ -145,7 +146,7 @@ body {
 }
 
 /* =========================
-   BUTTONS
+   BUTTON
    ========================= */
 
 .btn {
@@ -156,7 +157,7 @@ body {
     display: inline-block;
 }
 
-/* WhatsApp Green */
+/* ✅ WHATSAPP GREEN CTA */
 .btn-primary {
     background: #25D366;
     color: white;
@@ -174,9 +175,8 @@ body {
 
 .stats {
     display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .stat-box {
@@ -185,7 +185,6 @@ body {
     text-align: center;
     border-radius: 6px;
     border: 1px solid #eee;
-    min-width: 200px;
 }
 
 .stat-box h3 {
@@ -194,22 +193,20 @@ body {
 }
 
 /* =========================
-   GRID (FIXED)
+   GRID
    ========================= */
 
 .grid {
     display: grid;
     gap: 25px;
-    justify-items: center;
 }
 
 .grid-3 {
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 /* =========================
-   CARDS (FIXED WIDTH)
+   CARDS
    ========================= */
 
 .premium-card {
@@ -219,9 +216,6 @@ body {
     border: 1px solid #eee;
     transition: 0.3s;
     box-shadow: 0 5px 20px rgba(0,0,0,0.04);
-
-    max-width: 320px;
-    width: 100%;
 }
 
 .premium-card:hover {
@@ -272,7 +266,7 @@ h2 {
 }
 
 /* =========================
-   FOOTER
+   FOOTER (UPDATED PREMIUM)
    ========================= */
 
 .footer {
@@ -308,12 +302,6 @@ h2 {
    MOBILE
    ========================= */
 
-@media (max-width: 992px) {
-    .grid-3 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (max-width: 768px) {
 
     .nav-menu {
@@ -338,16 +326,9 @@ h2 {
 
     .stats {
         flex-direction: column;
-        align-items: center;
     }
 
     .hero h1 {
         font-size: 28px;
-    }
-}
-
-@media (max-width: 600px) {
-    .grid-3 {
-        grid-template-columns: 1fr;
     }
 }
