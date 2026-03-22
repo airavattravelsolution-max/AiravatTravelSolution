@@ -23,7 +23,7 @@
 body {
     font-family: "Georgia", serif;
     background-color: var(--light);
-    background-image: radial-gradient(rgba(10,10,10,10.015) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(0,0,0,0.015) 1px, transparent 1px);
     background-size: 20px 20px;
     color: var(--text);
     line-height: 1.6;
@@ -199,6 +199,7 @@ body {
 .grid {
     display: grid;
     gap: 25px;
+    justify-items: center;
 }
 
 .grid-3 {
@@ -207,9 +208,7 @@ body {
     gap: 25px;
     justify-content: center;
 }
-.grid {
-    justify-items: center;
-}
+
 /* =========================
    CARDS
    ========================= */
@@ -221,17 +220,14 @@ body {
     border: 1px solid #eee;
     transition: 0.3s;
     box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+    max-width: 320px;
+    width: 100%;
 }
 
 .premium-card:hover {
     transform: translateY(-6px);
     border-color: var(--accent);
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.premium-card {
-    max-width: 320px;
-    width: 100%;
 }
 
 /* =========================
