@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airavat Travel Solutions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airavat Travel Solutions</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 80px; }
+</style>
+
 </head>
 
 <body>
@@ -13,7 +20,7 @@
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="container nav-container">
-        <a href="index.html" class="logo-link">
+        <a href="#home" class="logo-link">
             <img src="assets/images/logo.png" class="logo-img">
             <span class="logo-text">Airavat Travel Solutions</span>
         </a>
@@ -21,20 +28,20 @@
         <div class="hamburger" id="hamburger">☰</div>
 
         <ul class="nav-menu" id="navMenu">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="services.html" class="nav-link">Services</a></li>
-            <li><a href="fleet.html" class="nav-link">Fleet</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#fleet" class="nav-link">Fleet</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-    <h1>Premium Chauffeur Driven Travel</h1>
-    <p>Serving corporates, MNCs & government organizations across 100+ cities in India</p>
-    <a href="contact.html" class="btn btn-primary">Book Now</a>
+<section id="home" class="hero">
+    <h1>India’s Trusted Chauffeur-Driven Travel</h1>
+    <p>Premium car & bus rental services across 100+ cities for corporates, MNCs & government organizations.</p>
+    <a href="#contact" class="btn btn-primary">Book Now</a>
 </section>
 
 <!-- STATS -->
@@ -55,41 +62,113 @@
     </div>
 </section>
 
-<!-- WHY -->
-<section class="alt-bg">
+<!-- ABOUT -->
+<section id="about" class="alt-bg">
     <div class="container">
-        <h2>Why Choose Us</h2>
+        <h2>About Us</h2>
         <div class="section-divider"></div>
 
-        <div class="grid grid-3">
-            <div class="premium-card">
-                <h3>Reliable Service</h3>
-                <p>On-time professional chauffeurs.</p>
-            </div>
+        <p style="text-align:center; max-width:800px; margin:auto;">
+            Airavat Travel Solutions is one of India’s leading car and coach rental providers,
+            delivering reliable, safe, and professional transport solutions across industries.
+        </p>
 
+        <div class="grid grid-3" style="margin-top:40px;">
             <div class="premium-card">
-                <h3>Wide Fleet</h3>
-                <p>Sedans, SUVs, Luxury & Buses.</p>
+                <h3>Experienced Team</h3>
+                <p>Strong management and operations expertise.</p>
             </div>
-
             <div class="premium-card">
-                <h3>Pan India</h3>
-                <p>100+ cities coverage.</p>
+                <h3>Transparent Billing</h3>
+                <p>Clear pricing with no hidden charges.</p>
+            </div>
+            <div class="premium-card">
+                <h3>Pan India Network</h3>
+                <p>Seamless multi-city travel management.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- SERVICES -->
-<section>
+<section id="services">
     <div class="container">
         <h2>Our Services</h2>
         <div class="section-divider"></div>
 
         <div class="grid grid-3">
             <div class="premium-card"><h3>Airport Transfers</h3></div>
-            <div class="premium-card"><h3>Corporate Travel</h3></div>
+            <div class="premium-card"><h3>Local Travel</h3></div>
             <div class="premium-card"><h3>Outstation Trips</h3></div>
+            <div class="premium-card"><h3>Corporate Transport</h3></div>
+            <div class="premium-card"><h3>Event Transport</h3></div>
+            <div class="premium-card"><h3>Tour Packages</h3></div>
+        </div>
+    </div>
+</section>
+
+<!-- FLEET -->
+<section id="fleet" class="alt-bg">
+    <div class="container">
+        <h2>Our Fleet</h2>
+        <div class="section-divider"></div>
+
+        <div class="grid grid-3">
+            <div class="premium-card">
+                <h3>Sedans</h3>
+                <p>Dzire, Etios, Xcent</p>
+            </div>
+
+            <div class="premium-card">
+                <h3>SUVs</h3>
+                <p>Innova, Crysta, Fortuner</p>
+            </div>
+
+            <div class="premium-card">
+                <h3>Luxury Cars</h3>
+                <p>Mercedes-Benz, BMW, Audi</p>
+            </div>
+
+            <div class="premium-card">
+                <h3>Tempo Travellers</h3>
+                <p>13 to 26 Seater</p>
+            </div>
+
+            <div class="premium-card">
+                <h3>Buses</h3>
+                <p>14 to 45 Seater</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section>
+    <div class="container">
+        <h2>Industries We Serve</h2>
+        <div class="section-divider"></div>
+
+        <div class="grid grid-3">
+            <div class="premium-card">IT (TCS, Wipro)</div>
+            <div class="premium-card">Pharma (Cipla)</div>
+            <div class="premium-card">Banking (SBI)</div>
+            <div class="premium-card">Hospitality</div>
+            <div class="premium-card">Government</div>
+            <div class="premium-card">Events</div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="alt-bg">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="section-divider"></div>
+
+        <div class="premium-card" style="text-align:center;">
+            <p><strong>Phone:</strong> +91 9167101212 / 7021312012</p>
+            <p><strong>Email:</strong> airavattravelsolution@gmail.com</p>
+            <p><strong>Contact Person:</strong> Saurabh Shirdhankar</p>
         </div>
     </div>
 </section>
@@ -97,7 +176,7 @@
 <!-- CTA -->
 <section class="highlight">
     <h2>Book Premium Travel Today</h2>
-    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    <a href="https://wa.me/919167101212" class="btn btn-primary">WhatsApp Now</a>
 </section>
 
 <!-- FOOTER -->
