@@ -307,8 +307,24 @@ h2 {
     .hamburger {
         display: block;
     }
-   
-   .cta-fleet::before {
+
+    .hero h1 {
+        font-size: 26px;
+    }
+}
+
+/* =========================
+   CTA FLEET BACKGROUND
+   ========================= */
+
+.cta-fleet {
+    position: relative;
+    background: linear-gradient(to right, #1b2a41, #2c3e50);
+    overflow: hidden;
+}
+
+/* SVG background */
+.cta-fleet::before {
     content: "";
     position: absolute;
     bottom: 10px;
@@ -321,7 +337,16 @@ h2 {
     opacity: 0.6;
 }
 
-    .hero h1 {
-        font-size: 26px;
-    }
+/* Overlay to keep text readable */
+.cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Keep content above background */
+.cta-fleet h2,
+.cta-fleet a {
+    position: relative;
+    z-index: 2;
 }
