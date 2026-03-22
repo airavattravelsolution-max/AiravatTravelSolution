@@ -1,15 +1,15 @@
 /* =========================
-   AIRAVAT PREMIUM MONOCHROME UI
+   AIRAVAT PREMIUM UI (FIXED)
    ========================= */
 
 :root {
-    --primary: #1c1c1c;
-    --secondary: #2b2b2b;
-    --accent: #c6a86b;
-    --light: #f8f6f2;
+    --primary: #1b2a41;      /* Deep Navy */
+    --secondary: #2c3e50;    /* Soft Blue */
+    --accent: #8b1e2d;       /* Premium Red */
+    --light: #f7f8fa;        /* Clean Background */
     --white: #ffffff;
     --text: #2a2a2a;
-    --muted: #777;
+    --muted: #6b7280;
 }
 
 /* RESET */
@@ -19,19 +19,16 @@
     box-sizing: border-box;
 }
 
-/* ✅ TEXTURED BACKGROUND ADDED */
 body {
     font-family: "Georgia", serif;
-    background-color: var(--light);
-    background-image: radial-gradient(rgba(0,0,0,0.015) 1px, transparent 1px);
-    background-size: 20px 20px;
+    background: var(--light);   /* ✅ CLEAN BACKGROUND */
     color: var(--text);
     line-height: 1.6;
 }
 
 /* CONTAINER */
 .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
     padding: 60px 20px;
 }
@@ -44,7 +41,7 @@ body {
     position: sticky;
     top: 0;
     background: var(--white);
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e7eb;
     z-index: 1000;
 }
 
@@ -56,11 +53,11 @@ body {
 }
 
 .logo-img {
-    height: 40px;
+    height: 36px;
 }
 
 .logo-text {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     margin-left: 8px;
     color: var(--primary);
@@ -119,22 +116,11 @@ body {
 .hero {
     text-align: center;
     padding: 120px 20px;
-    background: linear-gradient(to bottom, #ffffff, #f1efe9);
-    position: relative;
-}
-
-/* ✅ SUBTLE HERO TEXTURE */
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: radial-gradient(rgba(0,0,0,0.02) 1px, transparent 1px);
-    background-size: 25px 25px;
-    pointer-events: none;
+    background: linear-gradient(to bottom, #ffffff, #eef2f7);
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 40px;
     margin-bottom: 20px;
     color: var(--primary);
 }
@@ -157,12 +143,10 @@ body {
     display: inline-block;
 }
 
-/* ✅ WHATSAPP GREEN CTA */
+/* WhatsApp Green */
 .btn-primary {
     background: #25D366;
     color: white;
-    border: none;
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 .btn-primary:hover {
@@ -175,8 +159,9 @@ body {
 
 .stats {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .stat-box {
@@ -184,50 +169,46 @@ body {
     padding: 30px;
     text-align: center;
     border-radius: 6px;
-    border: 1px solid #eee;
+    border: 1px solid #e5e7eb;
+    min-width: 220px;
 }
 
 .stat-box h3 {
     color: var(--accent);
-    font-size: 28px;
+    font-size: 26px;
 }
 
 /* =========================
-   GRID
+   GRID FIX (IMPORTANT)
    ========================= */
 
 .grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   /* ✅ CENTER ALIGN */
     gap: 25px;
-    justify-items: center;
 }
 
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    justify-content: center;
+.grid-3 .premium-card {
+    width: 300px;              /* ✅ FIXED WIDTH */
 }
 
 /* =========================
-   CARDS
+   CARDS (FIXED ALIGNMENT)
    ========================= */
 
 .premium-card {
     background: white;
     padding: 25px;
     border-radius: 6px;
-    border: 1px solid #eee;
+    border: 1px solid #e5e7eb;
+    text-align: center;
     transition: 0.3s;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
-    max-width: 320px;
-    width: 100%;
 }
 
 .premium-card:hover {
     transform: translateY(-6px);
     border-color: var(--accent);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 /* =========================
@@ -235,7 +216,7 @@ body {
    ========================= */
 
 .alt-bg {
-    background: #f2efe9;
+    background: #eef2f7;   /* light blue tone */
 }
 
 /* =========================
@@ -245,7 +226,7 @@ body {
 h2 {
     text-align: center;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .section-divider {
@@ -272,15 +253,14 @@ h2 {
 }
 
 /* =========================
-   FOOTER (UPDATED PREMIUM)
+   FOOTER (NOT BLACK)
    ========================= */
 
 .footer {
-    background: #111111;
-    color: #bbb;
+    background: #2c3e50;   /* elegant blue */
+    color: #d1d5db;
     text-align: center;
-    padding: 50px 20px;
-    border-top: 1px solid #2a2a2a;
+    padding: 40px 20px;
 }
 
 .social-footer {
@@ -292,33 +272,19 @@ h2 {
     font-size: 22px;
     color: #25D366;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 .social-footer a:hover {
-    color: #ffffff;
+    color: white;
 }
 
 .footer-bottom {
     font-size: 13px;
-    color: #777;
 }
 
 /* =========================
    MOBILE
    ========================= */
-
-@media (max-width: 992px) {
-    .grid-3 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .grid-3 {
-        grid-template-columns: 1fr;
-    }
-}
 
 @media (max-width: 768px) {
 
@@ -342,11 +308,7 @@ h2 {
         display: block;
     }
 
-    .stats {
-        flex-direction: column;
-    }
-
     .hero h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
 }
