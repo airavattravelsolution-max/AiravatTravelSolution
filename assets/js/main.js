@@ -4,7 +4,6 @@ const navMenu = document.getElementById('navMenu');
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
-}
 
 // WhatsApp Form
 const form = document.getElementById('contactForm');
