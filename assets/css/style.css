@@ -1,12 +1,120 @@
-:root {
---primary:#2c2a28;
---accent:#b89b5e;
---bg:#f4f1ea;
---text:#2b2b2b;
+body {
+  margin:0;
+  font-family: Georgia, serif;
+  background:#f5f2ea;
+  color:#1f1d1a;
 }
-body{background:var(--bg);font-family:Arial;}
-.navbar{background:white;padding:10px;}
-.nav-menu{display:flex;gap:10px;list-style:none;}
-.nav-link{text-decoration:none;color:var(--text);}
-.footer{text-align:center;padding:20px;background:#1e1c1a;color:#b89b5e;}
-.social-footer{display:flex;justify-content:center;gap:15px;}
+
+.container {
+  max-width:1100px;
+  margin:auto;
+}
+
+.navbar {
+  background:white;
+  border-bottom:1px solid #ddd;
+}
+
+.nav-container {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+}
+
+.logo-img {
+  height:38px;
+}
+
+.nav-menu {
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+.nav-menu a {
+  text-decoration:none;
+  color:#1f1d1a;
+}
+
+.nav-menu a.active {
+  color:#b89b5e;
+}
+
+.hero {
+  background:#1f1d1a;
+  color:white;
+  padding:100px 20px;
+  text-align:center;
+}
+
+.btn-primary {
+  background:#b89b5e;
+  padding:12px 25px;
+  color:black;
+  text-decoration:none;
+}
+
+.section {
+  padding:60px 20px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:white;
+  padding:20px;
+}
+
+.list {
+  line-height:2;
+}
+
+.footer {
+  background:#111;
+  color:#b89b5e;
+  text-align:center;
+  padding:20px;
+}
+
+.social-footer {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-bottom:10px;
+}
+
+/* MOBILE */
+.hamburger {
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+}
+
+.hamburger span {
+  width:25px;
+  height:3px;
+  background:black;
+  margin:4px;
+}
+
+@media(max-width:768px){
+  .hamburger { display:flex; }
+  .nav-menu {
+    position:absolute;
+    top:60px;
+    left:-100%;
+    flex-direction:column;
+    background:white;
+    width:100%;
+    text-align:center;
+    transition:0.3s;
+  }
+  .nav-menu.active {
+    left:0;
+  }
+}
