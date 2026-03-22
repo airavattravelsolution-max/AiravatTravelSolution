@@ -1,1 +1,25 @@
+<svg width="1200" height="200" viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#ffffff" fill-opacity="0.08">
 
+    <!-- Sedan -->
+    <rect x="50" y="110" width="120" height="30" rx="6"/>
+    <rect x="70" y="90" width="80" height="25" rx="5"/>
+
+    <!-- SUV -->
+    <rect x="220" y="105" width="140" height="35" rx="6"/>
+    <rect x="250" y="80" width="90" height="30" rx="5"/>
+
+    <!-- Luxury Car -->
+    <rect x="400" y="110" width="130" height="30" rx="6"/>
+    <rect x="420" y="90" width="90" height="25" rx="5"/>
+
+    <!-- Tempo Traveller -->
+    <rect x="580" y="95" width="170" height="45" rx="6"/>
+    <rect x="600" y="70" width="120" height="30" rx="5"/>
+
+    <!-- Bus -->
+    <rect x="780" y="85" width="260" height="55" rx="8"/>
+    <rect x="800" y="60" width="200" height="30" rx="6"/>
+
+  </g>
+</svg>
