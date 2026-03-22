@@ -23,7 +23,7 @@
 body {
     font-family: "Georgia", serif;
     background-color: var(--light);
-    background-image: radial-gradient(rgba(0,0,0,0.015) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(10,10,10,10.015) 1px, transparent 1px);
     background-size: 20px 20px;
     color: var(--text);
     line-height: 1.6;
@@ -202,9 +202,14 @@ body {
 }
 
 .grid-3 {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-content: center;
 }
-
+.grid {
+    justify-items: center;
+}
 /* =========================
    CARDS
    ========================= */
@@ -222,6 +227,11 @@ body {
     transform: translateY(-6px);
     border-color: var(--accent);
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.premium-card {
+    max-width: 320px;
+    width: 100%;
 }
 
 /* =========================
@@ -301,6 +311,18 @@ h2 {
 /* =========================
    MOBILE
    ========================= */
+
+@media (max-width: 992px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
 
 @media (max-width: 768px) {
 
