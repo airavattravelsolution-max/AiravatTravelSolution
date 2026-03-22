@@ -1,5 +1,24 @@
-document.addEventListener("DOMContentLoaded",function(){
-const h=document.getElementById("hamburger");
-const m=document.getElementById("navMenu");
-if(h){h.onclick=()=>m.classList.toggle("active");}
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+}
+
+// WhatsApp Form
+const form = document.getElementById('contactForm');
+
+if(form){
+form.addEventListener('submit', function(e){
+e.preventDefault();
+
+const name = document.getElementById('name').value;
+const phone = document.getElementById('phone').value;
+const message = document.getElementById('message').value;
+
+const text = `Name: ${name}%0APhone: ${phone}%0ARequirement: ${message}`;
+window.open(`https://wa.me/919167101212?text=${text}`);
 });
+}
